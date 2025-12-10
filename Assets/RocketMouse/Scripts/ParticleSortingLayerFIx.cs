@@ -29,13 +29,12 @@
  */
 
 using UnityEngine;
-using System.Collections;
 
-public class ParticleSortingLayerFIx : MonoBehaviour 
+public class ParticleSortingLayerFIx : MonoBehaviour
 {
-    void Start () 
+    void Start()
     {
-	    GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingLayerName = "Player";
-	    GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingOrder = -1;
+        GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingLayerName = "Player";
+        GetComponent<ParticleSystem>().GetComponent<Renderer>().sortingOrder = -1;
     }
 }
